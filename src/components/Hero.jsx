@@ -229,7 +229,7 @@ export default function Hero() {
           paddingBottom: "25px",
 
           boxSizing: "border-box",
-          overflow: "hidden",
+          overflow: "visible",
           zIndex: 9,
         }}
       >
