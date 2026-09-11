@@ -1695,18 +1695,16 @@ function GallerySection({
             <div
               key={`${id}-${index}`}
               style={{
+                position: "relative",
                 width: "100%",
-                aspectRatio: "1",
-                overflow: "hidden",
+                height: 0,
+                paddingBottom: "100%",
+                boxSizing: "border-box",
                 background: "transparent",
                 border: "none",
-                boxSizing: "border-box",
-                padding: 0,
                 margin: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                    }}
+                overflow: "hidden",
+              }}
             >
               <img
                 src={photo}
@@ -1714,11 +1712,14 @@ function GallerySection({
                 loading="lazy"
                 decoding="async"
                 style={{
-                  display: "block",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
                   objectPosition: "center",
+                  display: "block",
                   margin: 0,
                   padding: 0,
                   border: "none",
