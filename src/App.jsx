@@ -10,7 +10,7 @@ import Hero from "./components/Hero";
 import GuestManager from "./components/GuestManager";
 
 const weddingMusic = new URL(
-  "./assets/music/wedding.mp3",
+  "./assets/music/wedding.m4a",
   import.meta.url
 ).href;
 
@@ -44,7 +44,7 @@ function App() {
     if (!audioRef.current) {
       audioRef.current = new Audio(weddingMusic);
 
-      audioRef.current.preload = "auto";
+      audioRef.current.preload = "none";
       audioRef.current.loop = true;
       audioRef.current.volume = 0.65;
       audioRef.current.muted = muted;
