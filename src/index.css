@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Heligthon Signature";
+  src: url("../assets/fonts/Heligthon-Signature.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  background: transparent;
+}
+
+#root {
+  background: transparent;
+}
+
+.opening-section {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.opening-background {
+  position: absolute;
+  z-index: -1;
+  top: -18px;
+  right: -18px;
+  bottom: -18px;
+  left: -18px;
+  background-image: var(--opening-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+}
+
+.opening-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 24px 16px;
+}
+
+.opening-content {
+  width: min(100%, 560px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.opening-kicker {
+  margin: 0;
+  color: #e8c27c;
+  font-family: "Heligthon Signature", cursive;
+  font-size: clamp(52px, 7vw, 78px);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  transform: rotate(-2deg);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.opening-title {
+  width: 100%;
+  margin: 4px 0 0;
+  color: #f1c76d;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 0.9;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.65);
+}
+
+.opening-gold-divider {
+  position: relative;
+  width: 70px;
+  height: 1px;
+  margin-top: 16px;
+  background: #dcae51;
+}
+
+.opening-gold-divider::before {
+  content: "❦";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  color: #dcae51;
+  font-size: 14px;
+  background: transparent;
+  padding: 0 8px;
+}
+
+.opening-description {
+  margin: 18px auto 0;
+  max-width: 500px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(12px, 1.4vw, 16px);
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.opening-polaroid {
+  width: min(100%, 320px);
+  margin: 20px auto 0;
+  padding: 10px 10px 18px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.25),
+    0 3px 8px rgba(0, 0, 0, 0.2);
+  animation: polaroidBounce 4.2s ease-in-out infinite;
+  animation-delay: 1.1s;
+  animation-fill-mode: both;
+}
+
+@keyframes polaroidBounce {
+  0%,
+  100% {
+    transform: rotate(-0.5deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-0.5deg) translateY(-14px);
+  }
+}
+
+.opening-polaroid-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #eee;
+}
+
+.opening-polaroid-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.opening-polaroid:hover .opening-polaroid-photo img {
+  transform: scale(1.06);
+}
+
+.opening-polaroid-caption {
+  padding-top: 16px;
+  color: #171717;
+  text-align: center;
+}
+
+.opening-polaroid-caption p {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.opening-polaroid-caption span {
+  display: block;
+  margin: 7px 0 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+}
+
+.opening-guest-card {
+  position: relative;
+  width: min(100%, 240px);
+  margin: 22px auto 0;
+  padding: 20px 16px 16px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 1px solid rgba(241, 199, 109, 0.5);
+  border-bottom: 1px solid rgba(241, 199, 109, 0.5);
+}
+
+.opening-guest-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.opening-guest-name {
+  margin: 8px 0 16px;
+  color: #f1c76d;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.opening-button {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 16px;
+  border: 1px solid #e8c27c;
+  border-radius: 3px;
+  background: #5d1721;
+  color: #f1d9a8;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.opening-button:hover {
+  background: #e8c27c;
+  color: #5d1721;
+}
+
+.opening-button svg {
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+/* Scroll reveal dimatikan agar auto-scroll tetap ringan. */
+.scroll-reveal-section,
+.scroll-reveal-section.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+.scroll-reveal-section.is-visible > *,
+.scroll-reveal-section.is-visible img,
+.scroll-reveal-section .scroll-reveal-ignore {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal-section,
+  .scroll-reveal-section.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .scroll-reveal-section.is-visible > *,
+  .scroll-reveal-section.is-visible img {
+    animation: none !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.event-address {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
