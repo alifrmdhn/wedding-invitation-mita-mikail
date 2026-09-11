@@ -12,7 +12,7 @@ import Countdown from "./Countdown";
 import RSVP from "./RSVP";
 
 const heroPhoto = new URL(
-  "../assets/foto 1.webp",
+  "../assets/foto sampul.webp",
   import.meta.url
 ).href;
 
