@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
 const BASE_URL =
-  "https://wedding-invitation-hasmita-mikail.vercel.app/";
+  "https://wedding-invitation-mita-mikail.vercel.app/";
 
 const GUEST_STORAGE_KEY =
-  "hasmita-mikail-guest-list";
+  "mita-mikail-guest-list";
 
 const MESSAGE_STORAGE_KEY =
-  "hasmita-mikail-global-message";
+  "mita-mikail-global-message";
 
 const DEFAULT_MESSAGE = `Assalamu’alaikum Warahmatullahi Wabarakatuh.
 
