@@ -932,7 +932,7 @@ export default function Hero() {
                 "0 1px 2px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div>Putri Bungsu</div>
+            <div>Putri bungsu</div>
             <div>
               Bapak Ismail Ali &amp; Ibu Habibah
             </div>
