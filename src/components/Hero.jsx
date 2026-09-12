@@ -432,7 +432,7 @@ export default function Hero() {
           Dengan memohon rahmat dan ridho Allah
           subhanahu Wa Ta&apos;ala., kami mengundang
           Bapak/Ibu/Saudara/i untuk hadir dan memberikan
-          do&apos;a rest pada acara pernikahan kami.
+          do&apos;a restu pada acara pernikahan kami.
         </p>
         <div
           style={{
@@ -932,7 +932,7 @@ export default function Hero() {
                 "0 1px 2px rgba(0, 0, 0, 0.25)",
             }}
           >
-            <div>Putri bungsu</div>
+            <div>Putri bungsu dari</div>
             <div>
               Bapak Ismail Ali &amp; Ibu Habibah
             </div>
